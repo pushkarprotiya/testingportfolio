@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.1.3/bootstrap-5.1.3/dist/css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- sidebar css -->
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+
+    <!-- progress query -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- font awsome cdnj -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- js link -->
+    <script src="javascript.js"></script>
+
+    <!-- stats query script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/moagrius/isOnScreen/master/jquery.isonscreen.min.js"></script>
+
+    <title>portfolio</title>
+</head>
+
+<body>
+    <nav class="menu" tabindex="0">
+        <div class="smartphone-menu-trigger"></div>
+        <header class="avatar">
+            <img id="profile" src="assets/images/mine.jpg" />
+            <div class="logo mt-3">
+                <a href="#"><img src="assets/images/header-logo.png" alt=""></a>
+                <br>
+                <small class="text-secondary">Front-end Developer</small>
+            </div>
+        </header>
+
+        <div class="container mt-lg-3 p-3">
+            <div class="row">
+                <div class="col-6">
+                    <small style="color: rgba(255, 255, 255, 0.753);">Residence:</small>
+                    <br>
+                    <small style="color: rgba(255, 255, 255, 0.753);">City:</small>
+                    <br>
+                    <small style="color: rgba(255, 255, 255, 0.753);">Age:</small>
+                </div>
+                <div class="col-6 text-end text-secondary">
+                    <small>India</small>
+                    <br>
+                    <small>New Delhi</small>
+                    <br>
+                    <small>19</small>
+                </div>
+            </div>
+            <hr>
+
+            <div class="container mt-4" id="pro">
+                <div class="row">
+                    <div class="col-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="progress blue">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">100%</div>
+                        </div>
+                        <div class="text text-center mt-3">
+                            <p style="font-size: 0.8rem;">HINDI</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="progress yellow">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">95%</div>
+                        </div>
+                        <div class="text text-center mt-3">
+                            <p style="font-size: 0.8rem;">ENGLISH</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <!-- progress bar -->
+
+            <div class="container">
+                <p style="font-size: 0.8rem;">Web Design - 96%</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 96%"></div>
+                </div>
+                <p style="font-size: 0.8rem;" class="mt-3">Photoshop - 96%</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 96%"></div>
+                </div>
+            </div>
+
+            <!-- social icon -->
+
+            <div id="social" class="mt-5">
+                <div class="container text-center">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <div id="banner">
+            <div class="container">
+                <div id="text">
+                    <div id="esc"><h1 style="font-weight: 900;">Discover My Amazing <br> Art Space!</h1></div>
+                    <br>
+                    <div id="esc">
+                        <p>into amazing experiences</p>
+                    </div>
+                    <br>
+                    <button id="explore-btn">EXPLORE NOW</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- =============== stats section -->
+
+
+        <div class="container">
+
+            <div id="prg-counter">
+                <div class="container row m-lg-auto">
+                    <div class="col-6 col-lg-3 col-md-6 col-sm-12 bg-dark">
+                        <img src="assets/images/stats icons/students.png" alt="">
+                        <div class="row">
+                            <div class="col-3 col-lg-3 col-md-3">
+                                <h3 class="prg-count" data-count="1" style="color: #fdba04;">0</h3>
+                            </div>
+                            <div class="col-9 col-lg-9 col-md-9 mt-lg-2">
+                                <p>Years Eperience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-6 col-sm-12">
+                        <img src="assets/images/stats icons/projects.png" alt="">
+                        <div class="row">
+                            <div class="col-4 col-lg-3 col-md-3">
+                                <h3 class="prg-count" data-count="143" style="color: #fdba04;">0</h3>
+                            </div>
+                            <div class="col-8 col-lg-9 col-md-9 mt-lg-2">
+                                <p>Completed Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-6 col-sm-12 bg-dark">
+                        <img src="assets/images/stats icons/calender.png" alt="">
+                        <div class="row">
+                            <div class="col-4 col-lg-3 col-md-3">
+                                <h3 class="prg-count" data-count="100" style="color: #fdba04;">0</h3>
+                            </div>
+                            <div class="col-8 col-lg-9 col-md-9 mt-lg-1">
+                                <p>Happy Coutomers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-6 col-sm-12">
+                        <img src="assets/images/stats icons/placement.png" alt="">
+                        <div class="row">
+                            <div class="col-3 col-lg-3 col-md-3">
+                                <h3 class="prg-count" data-count="15" style="color: #fdba04;">0</h3>
+                            </div>
+                            <div class="col-9 col-lg-9 col-md-9 mt-lg-2">
+                                <p>Honors and Awards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- services section -->
+
+        <div class="container mt-lg-0 mt-5 p-lg-5" id="service">
+            <h3>My Services</h3>
+            <div class="row mt-lg-4">
+                <div class="col-4">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <h6>Front-end Developer</h6>
+                            <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, laborum saepe rerum autem alias minima eius! Dignissimos aperiam sint, repudiandae sequi recusandae nihil at eaque a incidunt nobis! Nisi, tenetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <h6>Web Developer</h6>
+                            <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, laborum saepe rerum autem alias minima eius! Dignissimos aperiam sint, repudiandae sequi recusandae nihil at eaque a incidunt nobis! Nisi, tenetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <h6>Photoshop</h6>
+                            <p class="text-secondary mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, laborum saepe rerum autem alias minima eius! Dignissimos aperiam sint, repudiandae sequi recusandae nihil at eaque a incidunt nobis! Nisi, tenetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============== about us -->
+
+        <div class="container p-lg-5" id="about">
+            <div class="row">
+                <div class="col-3">
+                    <img src="assets/images/mine.jpg" alt="">
+
+                </div>
+                <div class="col-9">
+                    <h2>About <span style="color: #fdba04;">Me</span></h2>
+                    <p>Hello, I'm Pushkar Protiya. I'm a website designer who codes. I'm also the Photoshop artist. I'm done my website designing from "SIT HUB". I've worked internationally and also freelancing, in-house, and remotely on projects for leading brands, agencies and more.</p>
+                    <button id="resume">DOWNLOAD RESUME</button>
+                    <button id="hire">HIRE ME</button>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <nav class="menu1" tabindex="0">
+        <div class="smartphone-menu-trigger"></div>
+        <header class="avatar">
+            <button data-bs-target="#touch" data-bs-toggle="offcanvas" style="border: none; background: none;"><i class="fa-solid fa-bars text-white"></i></button>
+        </header>
+        <div class="container m-auto mt-5">
+            <small style="display: inline-block; transform: rotate(90deg);">Menu</small>
+        </div>
+
+        <div class="offcanvas offcanvas-end" id="touch" style="background-color: #20202a;">
+            <div class="offcanvas-header">
+                <h2>MENU</h2>
+                <button style="border: none; background: none;" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark text-white"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        
+    </nav>
+
+
+
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.1.3/bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#social a {
+    padding: 1.2rem;
+}
+
+#social a i {
+    color: gray;
+}
+
+#social a i:hover {
+    color: white;
+    transition: 0.4s;
+
+}
+
+#banner {
+    background-image: url(assets/images/one-copy.png);
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ====================== text animation */
+
+#text{
+    padding-top: 10rem;
+    margin-left: 5rem;
+}
+
+
+#esc {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#esc:first-of-type {
+    /* For increasing performance 
+                         ID/Class should've been used. 
+                         For a small demo 
+                         it's okaish for now */
+    animation: showup 7s infinite;
+}
+
+#esc:last-of-type {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+#esc:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 355px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}
+
+/* =================== explore btn */
+
+#explore-btn{
+    background-color: #fdba04;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    font-size: 0.7rem;
+    border: none;
+}
+
+/* ================== about bottons  */
+
+#resume{
+    background-color: #fdba04;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    font-size: 0.7rem;
+    border: none;
+}
+#hire{
+    background-color: white;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    font-size: 0.7rem;
+    border: none;
+}
+
+
+/* ==================== media queries */
+
+@media screen and (max-width: 768px){
+
+    #banner{
+        height: 197px;
+    }
+    #text {
+        padding-top: 2rem;
+        margin-left: 1rem;
+    }
+    #esc h1{
+        font-weight: 900;
+    font-size: 0.8rem;
+    }
+    #esc p{
+        font-size: 0.8rem;
+    }
+    #explore-btn {
+        letter-spacing: 1px;
+        padding: 4px 5px;
+        font-size: 0.7rem;
+
+    }
+}
+
+
